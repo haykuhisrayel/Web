@@ -1,0 +1,278 @@
+body {
+	font-family: Arial;
+	margin: 0 auto;
+	padding: 0
+}
+header {
+	background-color: #CF4647;
+	height: 1050px;
+	margin-top:-16px;
+}
+nav {
+	margin-right: 150px;
+}
+nav ul li {
+	float: right;
+	list-style: none;
+	padding: 20px 
+}
+ul li a {
+	text-decoration: none;
+	color:white;
+	font-size: 20px;
+}
+.first .title {
+	color:white;
+	text-align: center;
+	font-size: 45px;
+	padding-top: 100px;
+}
+.first{
+	text-align: center;
+}	
+
+.menu {
+	height: 50px;
+}
+.monitor {
+	width: 550px;
+	height: 400px;
+	background-color: #002B36;
+	margin: 20px -10px 20px 20px;
+	border-radius: 20px;
+	border: 5px solid #D8DEE7;
+	position: absolute;
+}
+.monitor2 {
+	width: 600px;
+	height: 450px;
+	background-color: #F6FAFD;
+	margin: auto;
+	border-radius: 20px;
+	border-bottom: 5px solid #D8DEE7;
+	position: relative;
+}
+.second  {
+	list-style: none;
+	color:#31DD00;
+	font-size: 18px;
+	text-align: left;
+}
+.second li::before { 
+    content: "$ ";
+}
+.mon3 {
+	width: 1000px;
+	height: 20px;
+	background-color: #F6FAFD;
+	margin: 0 auto;
+	border-radius: 10px;
+    border-bottom: 5px solid #D8DEE7;   
+}
+ .bot {
+	color:white;
+	text-align: center;
+	font-size: 18px;
+}
+.get {
+	margin: 20px auto;
+	width: 180px;
+	height: 50px;
+	border-radius: 8px;
+	color: #CF4647;
+	position: relative;
+	background: linear-gradient(90deg,rgba(255,255,255,.1), rgba(255,255,255,.6));
+}
+.main1 {
+	height: 400px;
+	display: flex;
+	line-height: 30px;
+}
+.image1 {
+	width: 300px;
+	text-align: center;
+	margin:10px auto;
+}
+.main2 {
+	background-color: #3A3E64;
+	height: 600px;
+	position: relative;
+	margin: 0;
+}
+.js {
+	width: 1000px;
+	height: 50px;
+	background-color: #E5E4E4;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	margin: 0 auto;
+}
+.body {
+	width: 1000px;
+	height: 500px;
+	background-color: #141414;
+	margin: -20px auto;
+	color:#9F9F9F;
+	font-size: 20px;
+}
+.color1 {
+	color: #C39A4E;
+}
+.color2 {
+	color: #704B28;
+}
+.color3 {
+	color: #828C4B;
+}
+.color {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	float: left;
+	margin: 20px 2px;
+}
+#red {
+	background-color: red;
+}
+#green {
+	background-color: green;
+}
+#yellow {
+	background-color: yellow;
+}
+
+.over {
+	opacity: 0.5;
+	text-align: justify;
+}
+.main3 {
+	height: 220px;
+	text-align: center;
+	margin-top: 130px;
+}
+.main4 {
+	height: 470px;
+	background-color: #CF4647;
+	color:white;
+	display: flex;
+	line-height: 50px;
+	margin: 0 auto;
+
+}
+.over1 {
+	opacity: 0.5;
+}
+.left {
+	width:650px;
+	text-align: center;
+}
+.right {
+	width: 650px;
+	text-align: center;	
+}
+.donate {
+	
+	width: 180px;
+	height: 50px;
+	border-radius: 8px;
+	color: #CF4647;
+	background: linear-gradient(90deg,rgba(255,255,255,.1), rgba(255,255,255,.6));
+}
+.images {
+	margin: 0 auto;
+}
+.people {
+	height: 90px;
+	width: 90px;
+	margin: 10px;
+	border-radius:5px;
+	display: inline-block;
+	/*position: absolute;*/
+}
+.logo {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	margin: 10px 150px;
+}
+.logo2 {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	margin: 10px 180px;
+	display: none;
+}
+input,
+.people:hover {
+	cursor: pointer;
+	outline:none;
+}
+
+@media screen and (max-width: 480px) {
+ 
+.menu {
+	height: 50px;
+}
+.monitor {
+	width: 250px;
+	height: 200px;
+}
+.monitor2 {
+	width: 300px;
+	height: 250px;
+}
+.mon3 {
+	width: 300px;
+}
+.js {
+	width: 480px;
+}
+.body {
+	width: 480px;
+	height: 500px;
+	overflow-x: scroll;
+}
+}
+@media screen and (max-width: 1024px) {
+.main1 {
+	height: 820px;
+	margin: 0 auto;
+	text-align: center;
+	display:block;
+}
+/*.people {
+	height: 80px;
+	width: 80px;
+}*/
+
+.logo {
+	display: none;
+}
+}
+@media screen and (max-width: 1200px) {
+.left {
+	width: 300px;
+}
+}
+@media screen and (max-width: 350px) {
+.logo2 {
+	display:block;
+}
+}
+@media screen and (max-width: 760px) {
+.main4 {
+	height: 1000px;
+	display: block;
+}
+nav ul li {
+	float: none;
+	padding: 10px;
+}	
+.left,
+.right {
+	margin: 0 auto;
+	width: 300px;
+
+}		
+}
+

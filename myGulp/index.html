@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gulp.js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="images/icon.jpg" rel="icon">
+</head>
+<body>
+<header>
+<nav class="menu">
+  <img  class="logo" src="images/gulp.svg">
+  <img  class="logo2" src="images/gulp.svg">
+  <ul>
+  	<li><a href="#">Contribute</a></li>
+	<li><a href="#">Twitter</a></li>
+	<li><a href="#">Plugins</a></li>
+	<li><a href="#">Docs</a></li>
+  </ul>
+</nav>
+<div class="first">
+	<p class="title">Automate and enhance your workflow</p>
+	<div class="monitor2">
+	<div class="monitor">
+   <ul class="second">
+   	<li>npm install gulp-cli -g</li>
+   	<li>npm install gulp -D</li>
+   	<li>touch gulpfile.js</li>
+   	<li>gulp --help</li>
+   </ul>
+</div>
+</div>
+<div class="mon3"></div>
+<p class="bot">gulp is a toolkit for automating painful or time-consuming tasks in your development<br> workflow, so you can stop messing around and build something.</p>
+ <input class="get" type="submit" value="GET STARTED ">
+</header>
+<main>
+    <div class="main1">
+    	<div class="image1">
+    	  <img src="images/1.svg">
+    	  <h2>Simple Usage</h2>
+    	  <p class="over">By preferring code over configuration, node best practices, and a minimal API surface - gulp makes things simple like never before.</p>
+    	</div>
+    	<div class="image1">
+    	  <img src="images/2.svg"> 
+    	  <h2>Efficient Builds</h2>
+    	  <p class="over">Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.</p> 
+    	</div>
+    	<div class="image1">
+    	  <img src="images/3.svg">
+    	  <h2>Quality Ecosystem</h2>
+    	  <p class="over">By enforcing strict guidelines, we ensure our plugins stay simple and work as expected.</p> 
+        </div>
+    </div>
+
+	<div class="main2">
+
+		<div class="js"> 
+			<div class="color" id="red"></div>
+			<div class="color" id="yellow"></div>
+			<div class="color" id="green"></div>
+			<div class="color"><b>gulpfile.js</b></div>
+		</div>
+		<div class="body">
+		  <pre>
+     <span class="color1">var</span> gulp = <span class="color2">require</span>(<span class="color3">'gulp'</span>);
+     <span class="color1">var</span> pug = <span class="color2">require</span>(<span class="color3">'gulp-pug'</span>);
+     <span class="color1">var</span> less = <span class="color2">require</span>(<span class="color3">'gulp-less'</span>);
+     <span class="color1">var</span> minifyCSS = <span class="color2">require</span>(<span class="color3">'gulp-csso'</span>);
+
+     gulp.task(<span class="color3">'html'</span>, <span class="color1">function</span>(){
+       <span class="color1">return</span> gulp.src(<span class="color3">'client/templates/*.pug'</span>)
+         .pipe(pug())
+         .pipe(gulp.dest(<span class="color3">'build/html'</span>))
+     });
+
+     gulp.task(<span class="color3">'css', <span class="color1">function</span>(){
+       <span class="color1">return</span> gulp.src(<span class="color3">'client/templates/*.less'</span>)
+         .pipe(less())
+         .pipe(minifyCSS())
+         .pipe(gulp.dest(<span class="color3">'build/css'</span>))
+     });
+
+     gulp.task(<span class="color3">'default'</span>, [ <span class="color3">'html'</span>, <span class="color3">'css'</span> ]);
+       </pre>
+     </div>
+	</div>
+	<div class="main3">
+		<h2>"Builds can be the most awful sinkhole for teams to<br> waste their time with - gulp is a serious win for any project."</h2>
+        <p class="over1">Eric, Co-founder @ stae</p>
+	</div>
+</main>
+<footer>
+	<div class="main4">
+	  <div class="left">
+		<h2>Become a backer</h2>
+		<p class="">Support the community and keep development going strong.</p>
+		<input class="donate" type="submit" value="DONATE ">
+	  </div>
+	  <div class="right">
+		<h2>Backers & Sponsors</h2>
+		<div class="images">
+			<img class="people" src="images/n1.png">
+			<img class="people" src="images/n2.png">
+			<img class="people" src="images/n3.jpg">
+			<img class="people" src="images/n4.jpg">
+			<img class="people" src="images/n5.png">
+			<img class="people" src="images/n6.jpg">
+			<img class="people" src="images/n7.jpg">
+			<img class="people" src="images/n8.png">
+			<img class="people" src="images/n9.jpg">
+			<img class="people" src="images/n10.png">
+		</div>
+	  </div>
+	</div>
+</footer>
+</body>
+</html>
